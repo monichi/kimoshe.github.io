@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Check Out </title>
+	<link rel="stylesheet" style="text/css" href="styleCheck.css"></link>
+</head>
+<body style="margin-left: 590px; margin-top: 100px;">
+
+	<form action="homeCRUD4.php" method="post">
+	<br>
+		<table style="width: 0%; background-color: pink; align: center">
+			<tr>
+				<td style="font-size: 16pt;"><b> Name:</b> </td>
+				<td> <input type="text" name="myname" style="width:250px; height: 25px; font-size: 15pt; border-radius: 10px;"> </td>
+			</tr>
+			<tr>
+				<td style="font-size: 16pt;"> <b> Address:</b> </td>
+				<td>
+				<input type="text" name="address" style="width:250px; height: 25px; font-size: 15pt; border-radius: 10px;"">
+				</td>
+			</tr>
+			<tr>
+				<td style="font-size: 16pt;"> <b> Phone Number: </b> </td>
+				<td> 
+				<input type="phone" name="phone" pattern="[0-9]{11}" style="width:240px; height: 25px; font-size: 15pt; border-radius: 10px;"">
+				</td>
+			</tr>
+			<tr>
+				<td style="font-size: 16pt"><b>Payment Method:</b> </td>
+				<td> 
+				<select id="select" name="pay" style="width:200px; height: 25px; font-size: 15pt; border-radius: 10px;"">
+				<option value="Cash on Delivery">Cash on Delivery
+				<option value="G-Cash">G-Cash
+				<option value="ATM">Mastercard ATM
+				<option value="ATM">Visaplus ATM
+				<option value="ATM"> American Express ATM
+				<option value="ATM"> Discover ATM
+				</select>
+			<tr>
+				<td style="width:24px; height: 24px; font-size: 16pt;"><b> Review:</b> </td>
+				<td> 
+				<input type="text" name="rev" placeholder value="Please leave your comment here" style="height:120px; width: 230px; border-radius: 10px;"">
+				</td> 
+			</tr>
+			
+				
+				</td>
+			</tr>
+			<tr>
+				<td> <input type="submit" name="send" style="margin-top:50px; text-align: center" href="homeCRUD4.php"+ onclick="return confirm('Are you sure?')" value="Send"> </td>
+			</tr>
+			
+		</table>
+	</form>
+</body>
+</html>

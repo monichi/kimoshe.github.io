@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device=width, initial-scale=1">	
+	<title> Register </title>
+	<link rel="stylesheet" type="text/css" href="styleCss.css">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+	<script>  
+		function validateform(){  
+		var Uname=document.myform.Uname.value;  
+		var password=document.myform.password.value;  
+  
+		if (Uname==null || Uname==""){  
+  		alert("Must be filled the Username!");  
+ 		 return false;  
+		}
+
+		else if (password==null || password==""){  
+  		alert("Must be filled the Password!");  
+ 		 return false;  
+		}
+
+		if(password.length<8){  
+  		alert("Password is at least 8 characters.");  
+  		return false;  
+  		}  
+
+	}  
+</script>  
+</head>
+<body>
+	<h1> <b>Welcome to Registration Form <b></h1><br>
+		
+    <div class="login">    
+    <form id="login" name="myform" method="post" action="http://localhost/Kimoshe/multiLogin.php" onsubmit="return validateform()" >    
+		
+        <b>Username: </b>    
+        <input type="text" name="username" class="username" id="Uname" placeholder="Username" required>
+        <br><br>   
+
+         <b>Password: </b>
+        <input type="password" name="password" class="password" id="Pass" placeholder="Password" >
+        <br><br>
+		
+		<b> Email: <b>
+			<input id="email" type="text" class="Email" placeholder="Email" required>
+		<br><br>
+		
+		<b> Phone Number: </b>
+			<input id="phone" type="text" class="Phonenumber" placeholder="Phone Number" size="25" pattern="[0-9]{11}">
+		<br><br>
+		
+		<b> Where do you live: <b></br>
+			<select id="select" class="country" size="1">
+				<option value="SE" required> San Esteban
+				<option value="BANTAY" required> Bantay
+				<option value="STA" required> Sta. Maria
+				<option value="SANTA" required> Santa
+				<option value="NARVA" required> Narvacan
+				<option value="OTHER" selected required> Others
+			</select>
+		<br><br>
+		
+		<b> Gender: <b>
+			<input type="radio" name="gender" class="Gender" required> Male
+			<input type="radio" name="gender" class="Gender" required> Female
+		<br><br>
+         <button type="submit" name="log" href="http://localhost/Kimoshe/multiLogin.php" >Register</button>
+		  <button type="reset" name="reset" href="#" >Reset</button>
+	</div>
+</div>
+</form>
+
+</body>
+</html>

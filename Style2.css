@@ -1,0 +1,37 @@
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 2px solid #000000 ;
+}
+th, td {
+	text-align: left;
+	padding: 17px;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+body{
+	background-image: url('brow.jpg');
+	background-size: cover;
+	font-family: sans-serif;
+}
+h1{
+	font-size: 60px;
+	text-align: center;
+}
+button {
+	background-color: #540000;
+	margin:10px 0px 0px 20px;
+	border-radius: 12px;
+	border: 2px solid #FDE7A5;
+	padding: 9px 80px;
+	outline: none;
+	color: white;
+	cursor:pointer;
+	transition:0.25px;
+}
+button:hover{
+	background-color:#af8916 ;
+}

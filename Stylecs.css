@@ -1,0 +1,39 @@
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 3px solid #ddd;
+	color: white;
+}
+th, td {
+	text-align: left;
+	padding: 16px;
+}
+
+tr:nth-child(even){
+	background-color: black;
+}
+h1{
+	font-size: 60px;
+	text-align: center;
+	color: white;
+}
+body{
+	background-image: url('brown.jpg');
+	background-size: cover;
+	font-family: sans-serif;
+}
+button {
+	background-color: #540000;
+	margin:10px 0px 0px 20px;
+	border-radius: 12px;
+	border: 2px solid #FDE7A5;
+	padding: 9px 80px;
+	outline: none;
+	color: white;
+	cursor:pointer;
+	transition:0.25px;
+}
+button:hover{
+	background-color:#af8916 ;
+}

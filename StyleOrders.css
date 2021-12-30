@@ -1,0 +1,34 @@
+body{
+	background-image: url("brad.jpg");
+	text-align: top;
+}
+	
+	
+#navbar {
+  overflow: hidden;
+  background-color: #38190e;
+
+  
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 95px;
+  margin-right: 100px;
+ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ font-weight: bolder;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+h1{
+	margin-bottom: 1000px;
+}
